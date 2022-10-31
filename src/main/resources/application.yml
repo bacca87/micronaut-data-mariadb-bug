@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: micronaut-data-mariadb-bug
+
+r2dbc:
+  datasources:
+    default:
+      url: r2dbc:mariadb://myserver.com/mydb
+      username: myuser
+      password: MyPaSSw0rD
+      dialect: MYSQL
+      options:
+        driver: pool
+        protocol: mariadb
+      schema-generate: CREATE
